@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>Weight Converter</title>
+
+  <style>
+    body{
+      margin-top: 70px;
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+        <form>
+          <div class="row">
+            <div class="col-md-4">
+              <select class="form-select" id="unitInput">
+                <option value="0" selected>Select Unit</option>
+                <option value="type_pound">Pound</option>
+                <option value="type_gram">Gram</option>
+                <option value="type_kilogram">Kilogram</option>
+                <option value="type_ounce">Ounce</option>
+                <option value="type_milligram">Milligram</option>
+              </select>
+            </div>
+
+            <div class="col-md-8">
+              <input type="number" class="form-control" placeholder="Enter value ..." id="valueInput">
+            </div>
+          </div>
+        </form>
+        <div id="output" class="mt-3" style="display: none;">
+
+          <div class="card text-white bg-dark bg-gradient mb-2">
+            <ul class="list-inline" style="padding-left: 10px;">
+              <li class="list-inline-item card-title fw-bold pt-2 mb-0" id="titleOne"></li>
+              <li class="list-inline-item card-title fw-bold pt-2 mb-0" id="outputOne"></li>
+            </ul>
+          </div>
+
+          <div class="card text-white bg-dark bg-gradient mb-2">
+            <ul class="list-inline" style="padding-left: 10px;">
+              <li class="list-inline-item card-title fw-bold pt-2 mb-0" id="titleTwo"></li>
+              <li class="list-inline-item card-title fw-bold pt-2 mb-0" id="outputTwo"></li>
+            </ul>
+          </div>
+
+          <div class="card text-white bg-dark bg-gradient mb-2">
+            <ul class="list-inline" style="padding-left: 10px;">
+              <li class="list-inline-item card-title fw-bold pt-2 mb-0" id="titleThree"></li>
+              <li class="list-inline-item card-title fw-bold pt-2 mb-0" id="outputThree"></li>
+            </ul>
+          </div>
+
+          <div class="card text-white bg-dark bg-gradient mb-2">
+            <ul class="list-inline" style="padding-left: 10px;">
+              <li class="list-inline-item card-title fw-bold pt-2 mb-0" id="titleFour"></li>
+              <li class="list-inline-item card-title fw-bold pt-2 mb-0" id="outputFour"></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
